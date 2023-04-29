@@ -2,6 +2,10 @@
 
 <!-- Briefly describe the changes included in this PR. -->
 
+## Names of Participants
+
+<!-- Which team members participated in this PR. -->
+
 ## Related Issues
 
 <!-- List any related issues that this PR addresses or fixes. -->
