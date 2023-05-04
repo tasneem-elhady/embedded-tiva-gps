@@ -1,4 +1,6 @@
 #include "UART_init.h"
+#include "TM4C123GH6PM.h"
+#include "../utils/bit_utils.h"
 void UART0_init_fifo(int BR)
 {
 	 double I_FBRD = 0;    

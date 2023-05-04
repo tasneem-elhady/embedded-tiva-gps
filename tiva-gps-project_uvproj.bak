@@ -406,19 +406,19 @@
           <GroupName>Source Group 1</GroupName>
           <Files>
             <File>
-              <FileName>startup_TM4C123.s</FileName>
-              <FileType>2</FileType>
-              <FilePath>.\startup_TM4C123.s</FilePath>
+              <FileName>main.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\src\main.c</FilePath>
             </File>
             <File>
               <FileName>system_TM4C123.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\system_TM4C123.c</FilePath>
+              <FilePath>.\src\utils\system_TM4C123.c</FilePath>
             </File>
             <File>
-              <FileName>main.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\src\main.c</FilePath>
+              <FileName>startup_TM4C123.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>.\src\utils\startup_TM4C123.s</FilePath>
             </File>
           </Files>
         </Group>
