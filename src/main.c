@@ -1,5 +1,8 @@
-
 int main() {
-	int i = 0;
-	i++;
+	while(1) {
+		//delay_ms(1000);
+		int x = 5;
+		//delay_ms(1000);
+		x++;
+	}
 }
