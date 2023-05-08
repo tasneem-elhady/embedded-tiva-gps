@@ -14,4 +14,6 @@ geographic_point get_geographic_point(void);
 
 void get_RMC_string(void);
 
+double parse(char *degree_str);
+
 #endif
