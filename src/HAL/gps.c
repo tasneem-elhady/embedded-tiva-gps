@@ -9,6 +9,7 @@ char RMC_STRING [80];
 void gps_init()
 {
     UART0_init_fifo(9600);
+		//UART1_init_fifo(9600);
 }
 
 // recvives an RMS sentence form gps om URAT1
@@ -40,6 +41,8 @@ geographic_point get_geographic_point()
     char valid[] = "";
 		geographic_point p;
 		char *token ;
+		memset(RMC_STRING,0,80);
+		get_RMC_string();
 		token = strtok(RMC_STRING, ",");
 		token= strtok (NULL,",");
 				strcpy(valid,token);
@@ -58,15 +61,15 @@ geographic_point get_geographic_point()
 
 		token= strtok (NULL,",");
 				strcpy(lon_dir,token);
-//		if (strcmp(lat_dir, "N")==0)
-//			p.latitude = atof (lat);
-//		else
-//			p.latitude = -atof (lat);
+		if (strcmp(lat_dir, "N")==0)
+			p.latitude = atof (lat);
+		else
+			p.latitude = -atof (lat);
 
-//		if (strcmp (lon_dir, "E")==0)
-//			p.longtude = atof (lon);
-//		else
-//			p.longtude =-atof (lon);
+		if (strcmp (lon_dir, "E")==0)
+			p.longtude = atof (lon);
+		else
+			p.longtude =-atof (lon);
 		}
 		
 		else
